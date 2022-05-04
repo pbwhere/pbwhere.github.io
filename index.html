@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Intoduction of me
+        </title>
+        <link rel="icon" href="https://i.pinimg.com/564x/43/90/53/439053ccaac233d86551852a0461acc4.jpg" type="image/icon type">
+        <audio src="123.mp3" autoplay controls></audio>
+      <style type="text/css">
+      a:hover{color:red}
+    </style>
+    </head>
+
+    <body>
+        <h1 style = "color:purple">About me</h1>
+        <h2>1.Brief biography about me.</h2>
+        <p style = "color:gray">My Highschool : <a href = "https://tcgs.tc.edu.tw/">台中女中</a></p>
+        <p style = "color:gray">The Department I major : <a href = "https://web.ee.ntu.edu.tw/">電機工程學系</a></p>
+        <h2>2.My Hobbies : </h2>
+        <ul><a href = "https://www.facebook.com/ntueegbkt">Playing Basketball</a></ul>
+        <ul><a href = "https://www.japan.travel/tw/tw/">Traveling</a></ul>
+        <ul><a href = "https://www.youtube.com/c/ggukim">Watching YT</a></ul>
+        <image src = "https://imgur.dcard.tw/ycmhaOHh.jpg" width = "250px" alt = "一隻奶油臘腸！">
+        <p><span id = "timee"></span></p>
+    </body>
+</html>
+
+<script>
+    function gettime()
+{
+     today = new Date();
+     y = today.getFullYear();
+     mon = (today.getMonth()+1);
+     d = today.getDate();
+     h = today.getHours().toString().padStart(2,'0');
+     min = today.getMinutes().toString().padStart(2,'0');
+     sec = today.getSeconds().toString().padStart(2,'0');
+     document.getElementById("timee").innerHTML = mon + '-' + d + '-' + y + ' ' + h + ':' + min + ':' + sec;
+    setTimeout("gettime()", 1000);
+
+}  
+
+gettime();
+</script>
